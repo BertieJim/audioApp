@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+    <FrameLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#343348">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="#22343348"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginBottom="40dip"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="top">
+            <Button
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:onClick="Out"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/close"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            >
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="300dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/txt_text"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:ems="10"
+                    android:background="#343348"
+                    android:layout_weight="1.0"
+                    android:textColor="#DCDCDC"
+                    android:textSize="16sp"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="280dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:background="#7FD6D6D6" />
+
+
+
+
+            <LinearLayout
+                android:layout_marginTop="30dp"
+                android:layout_width="300.0dip"
+                android:layout_height="50.0dip"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/bt_start"
+                        android:layout_marginRight="10dip"
+
+                        android:textSize="20sp"
+                        android:textColor="#625EA3"
+                        android:text=" 开始 "
+                        android:onClick="Start_Record"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/button_shape"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/bt_stop"
+                        android:layout_marginLeft="10dip"
+                        android:textSize="20sp"
+                        android:textColor="#625EA3"
+                        android:text=" 停止 "
+                        android:onClick="Stop_Record"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/button_shape"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="300.0dip"
+                android:layout_height="50.0dip"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/btn_cancel"
+                        android:layout_marginRight="10dip"
+
+                        android:textSize="20sp"
+                        android:textColor="#625EA3"
+                        android:text=" 取消 "
+                        android:onClick="Cancel_Record"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/button_shape"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/btn_confirm"
+                        android:layout_marginLeft="10dip"
+                        android:textSize="20sp"
+                        android:textColor="#625EA3"
+                        android:text=" 确定 "
+                        android:onClick="Confirm_Record"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/button_shape"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="300.0dip"
+                android:layout_height="50.0dip"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/txt_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:ems="10"
+                        android:background="#343348"
+                        android:layout_weight="1.0"
+                        android:paddingLeft="5dp"
+                        android:textColor="#DCDCDC"
+                        android:textSize="16sp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2">
+                    <Button
+                        android:id="@+id/bt_play"
+                        android:visibility="invisible"
+                        android:layout_marginLeft="10dip"
+                        android:onClick="Play_Record"
+                        android:layout_width="35dip"
+                        android:layout_marginTop="10dip"
+                        android:layout_height="35dip"
+                        android:background="@drawable/arrow"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="300.0dip"
+                android:layout_height="50.0dip"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/bt_giveup"
+                        android:layout_marginRight="10dip"
+                        android:visibility="invisible"
+
+
+                        android:textSize="20sp"
+                        android:textColor="#625EA3"
+                        android:text=" 放弃 "
+                        android:onClick="Delete_Record"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/button_shape"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+                    <Button
+                        android:id="@+id/bt_upload"
+                        android:layout_marginLeft="10dip"
+                        android:visibility="invisible"
+                        android:textSize="20sp"
+                        android:textColor="#625EA3"
+                        android:text=" 上传 "
+                        android:onClick="Upload_Record"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/button_shape"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>
