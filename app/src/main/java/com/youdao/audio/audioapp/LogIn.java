@@ -106,7 +106,7 @@ public class LogIn extends AppCompatActivity {
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
-        client.post(getApplicationContext(),"http://10.236.25.88:5000/getOneText", entity,"", new JsonHttpResponseHandler() {
+        client.post(getApplicationContext(),"http://api.ocr.youdao.com:7890/getOneText", entity,"", new JsonHttpResponseHandler() {
             @Override
             public void onSuccess(int i, Header[] headers, JSONObject response) {
                 try {
